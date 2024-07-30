@@ -1,0 +1,147 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{color}
+\usepackage[pdftitle={Schedule}, pdfauthor={Mariela Jennings}, colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{multicol}
+\usepackage{termcal}
+\usepackage{array,ragged2e}
+\definecolor{shadecolor}{gray}{0.9}
+\usepackage{color}
+
+
+\newcommand{\TW}{
+\skipday 
+\calday[Tuesday]{\classday} 
+\calday[Wednesday]{\classday} 
+\skipday
+\skipday 
+\skipday\skipday }
+
+\begin{document}
+
+\title{Pushkin Developer's Workshop Schedule}
+\author{Joshua Hartshorne, Mariela Jennings, Joshua de Leeuw}
+\date{December 19-20, 2017}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%
+\section{Overview}
+\noindent The Pushkin Developer's Workshop will introduce participants to Pushkin - an innovative platform for the deployment of flexible and scalable online studies built for easy integration with jsPsych. Participants will:
+\begin{itemize}
+\item learn more about Pushkin and jsPsych
+\item practice creating jsPsych quizzes 
+\item deploy a Pushkin project locally and online
+\end{itemize}
+
+
+\section{Location and Transportation}
+\noindent The workshop will take place at Boston College (\href{https://www.google.com/maps/place/Stokes+Hall/@42.3341155,-71.1734724,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3786033c435af:0x2e90188df7eeb92b!8m2!3d42.3341155!4d-71.1712837}{Stokes N203}) from 9am-6pm on December 19-20, 2017. 
+
+\vspace{5mm}
+
+\noindent If you are planning on driving, \href{http://www.bc.edu/offices/transportation/visitor.html} {visitor parking} is available on campus. We might also be able to provide you with a free parking spot next to \href{https://www.google.com/maps/place/McGuinn+Hall/@42.3337275,-71.1719167,17z/data=!3m1!4b1!4m5!3m4!1s0x89e378601bd55acf:0xaf28b60b9ddceb4f!8m2!3d42.3337275!4d-71.169728} {McGuinn Hall} (please contact Mariela Jennings at marielajennings@gmail.com if you need a parking spot).
+
+\vspace{5mm}
+
+\noindent Stokes Hall is also easily accessible via the Green Line. The closest stop on the B line is \href{https://www.google.com/maps/place/Boston+College/@42.3401305,-71.1692767,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3785d0bd5d78f:0x8951e9c865115823!8m2!3d42.3401305!4d-71.167088}{Boston College}, and the closest stop on the D line is \href{https://www.google.com/maps/place/Chestnut+Hill+Station/@42.3268724,-71.1666582,17z/data=!3m1!4b1!4m5!3m4!1s0x89e378f39f48ee79:0xabec7d4b3cfd8a9c!8m2!3d42.3268724!4d-71.1644695}{Chestnut Hill Station}.
+
+
+\section{Attending}
+\noindent Please RSVP at http://bit.ly/2zYA5Tw no later than Dec. 10 so that we can
+order food.
+
+\section{Requirements} 
+
+\noindent It would be helpful to have the following ready before the workshop: 
+\begin{itemize}
+
+\item a \href{https://github.com}{GitHub} account
+\item \href {https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac}{Docker} installed 
+\item a \href {https://id.docker.com}{Docker account}
+\item a \href{https://macpostgresclient.com/}{Postgres manager} installed
+
+\end{itemize}
+
+
+
+
+
+
+\newpage
+\section{Tentative Schedule:}
+\begin{center}
+\begin{calendar}{12/18/2017}{1} 
+\setlength{\calboxdepth}{.3in}
+\TW
+
+
+% schedule
+\caltexton{1}{
+\vspace{5mm}
+\textbf {9am} - Introduction: Why Pushkin? Motivation for creating the platform, and for choosing the technologies used.
+\vspace{5mm}
+
+\textbf {10.30am} - Coffee break
+\vspace{5mm}
+
+\textbf {11am} - jsPsych tutorial
+\vspace{5mm}
+
+\textbf{12.30pm} - Lunch (provided)
+\vspace{5mm}
+
+\textbf{1.30pm} - Create your own quiz with jsPsych
+\vspace{5mm}
+
+\textbf{2.15pm} - Clone and set up your Pushkin project; test in a local environment
+\vspace{5mm}
+
+\textbf{3.30pm} - Coffee break
+\vspace{5mm}
+
+\textbf{4pm} - Amazon Web Services (users, security groups, s3 buckets, Cloudfront distributions)
+\vspace{5mm}
+
+
+}
+\caltexton{2}{
+\vspace{5mm}
+\textbf{9am} - First steps for live deployment (build and tag Docker containers, set up databases)
+\vspace{5mm}
+
+\textbf {10.30am} - Coffee break
+\vspace{5mm}
+
+\textbf {11am} - Live deployment  (create a Rancher instance, create a host in Rancher, set up DNS)
+\vspace{5mm}
+
+\textbf{12.30pm} - Lunch (provided)
+\vspace{5mm}
+
+\textbf{1.30pm} - Wrap up deployment and test functionality; tips for creating and deploying studies with Pushkin
+\vspace{5mm}
+
+\textbf{2.30pm} - Open Organizational Meeting (anyone can attend): Future directions for development and Pushkin/jsPsych integration
+\vspace{5mm}
+
+
+
+}
+
+
+
+\end{calendar}
+\end{center}
+
+\end{document}
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
