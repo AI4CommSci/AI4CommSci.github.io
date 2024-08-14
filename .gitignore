@@ -7,3 +7,4 @@
 **/*.aux
 **/*.blg
 **/*.fls
+.DS_Store
