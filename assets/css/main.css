@@ -2192,7 +2192,7 @@ button:hover,
   position: relative;
   background-image: url("images/overlay.png"), url("images/header.svg"),
     linear-gradient(75deg, #687864 20%, #5085a5 60%);
-  padding: 5em 0 3em 0;
+  padding: 5em 0 1em 0;
 }
 
 #promo-wrapper {
@@ -2368,7 +2368,7 @@ button:hover,
 
 #hero h2 {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 #hero strong {
@@ -2380,7 +2380,7 @@ button:hover,
 }
 
 #hero p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 
