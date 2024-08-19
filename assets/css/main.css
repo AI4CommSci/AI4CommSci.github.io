@@ -3161,3 +3161,19 @@ button:hover,
   text-align: left;
 }
 
+
+.thumbnail {
+  width: 120px; /* Adjust width as needed */
+  height: 160px; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Optional border */
+  border-radius: 8px; /* Optional rounded corners */
+  transition: transform 0.3s; /* Smooth hover effect */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.thumbnail:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  border-color: #777; /* Change border color on hover */
+}
