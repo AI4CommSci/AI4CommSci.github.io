@@ -3161,7 +3161,6 @@ button:hover,
   text-align: left;
 }
 
-
 .thumbnail {
   width: 120px; /* Adjust width as needed */
   height: 160px; /* Maintain aspect ratio */
@@ -3176,4 +3175,40 @@ button:hover,
 .thumbnail:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
   border-color: #777; /* Change border color on hover */
+}
+
+.image-container {
+  flex-basis: 100%;
+  text-align: center; /* Aligns the image center horizontally */
+  margin: 20px 0; /* Adds spacing around the image */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-content {
+  position: relative;
+  overflow: hidden; /* Ensures the container expands to fit floated content */
+}
+
+.image-container-float {
+  float: right; /* Float the image to the right */
+  margin-left: 20px; /* Adds space between the image and text */
+  max-width: 50%; /* Adjust the width of the image as needed */
+}
+
+.image-container-float img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 0.7em;
+  line-height: 1.2;
 }
