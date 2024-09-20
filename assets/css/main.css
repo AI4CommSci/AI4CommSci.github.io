@@ -3212,3 +3212,27 @@ figcaption {
   font-size: 0.7em;
   line-height: 1.2;
 }
+
+#logo_index {
+  height: 100px;
+  margin: 5px;
+}
+
+#header_index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo_rest {
+  margin-top: 20px;
+  height: 40px;
+}
+
+#header_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
